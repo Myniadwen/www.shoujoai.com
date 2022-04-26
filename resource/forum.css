@@ -1,0 +1,95 @@
+html { background-color: rgb(253,192,235)}
+
+body { 
+	background: rgb(253,192,235) url(../images/fbackground.png) repeat-x;
+	min-width: 850px;
+}
+
+* html body {width: 980}
+
+a {color: #40b}
+a:visited {color: #c09}
+
+img.header {
+	width: 424px;
+	height: 152px;
+}
+
+img, div {behavior: url(../resource/iepngfix.htc)}
+
+.frm .bcl {background-color: transparent}
+
+div.hcl {background-color: #cd8bba}
+
+table.tbl tr.hrw {background-color: #cd8bba}
+
+table.std {background-color: #cd8bba}
+
+/*
+ * Header 
+ */
+
+.hright {
+	float:right;
+	text-align:center;
+	width:400px
+}
+
+.hright table {
+	margin: 0 auto;
+	text-align: left;
+}
+
+.nav {
+	position: relative;
+/*	top: -95px;
+	left: 225px;
+	height: 80px;
+	width: 450px; */
+	margin: 0;
+	margin-bottom:10px;
+	padding: 0;
+	text-align: center;
+/*	border:1px solid #f00; */
+}
+
+.nav ul {
+	white-space:nowrap;
+	padding: 0;
+	margin: 0;
+	display: block;
+	align: center;
+}
+
+.nav li {
+	margin: 0 .9em;
+	display: inline;
+}
+
+.nav a {
+	color: rgb(124,30,165);
+        font-family: Arial, sans-serif;
+	font-weight: bold;
+        font-size: 1.2em;
+	text-decoration: none;
+}
+
+.footer ul {
+	white-space:nowrap;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	align: center;
+}
+
+.footer li {margin: 0 .5em; display: inline;}
+
+.footer a {
+	color: rgb(124,30,165);
+	text-decoration: none;
+}
+
+.nav a:visited,
+.footer a:visited {color: rgb(124,30,165)}
+
+.nav .n2 {font-style: italic;)

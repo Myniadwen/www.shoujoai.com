@@ -1,0 +1,454 @@
+/* mwForum Default Style 2.9.3 */
+
+/* Canvas */
+html {
+	margin: 0 0 1px;
+	height: 100%;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 10px;
+}
+
+/* Base font (IE 5.x doesn't inherit font to table) */
+body, table {
+	font-size: 13px;
+	font-family: verdana, sans-serif;
+}
+
+/* Link */
+a {
+	color: blue;
+	text-decoration: underline;
+}
+a:visited {
+	color: purple;
+}
+a:hover {
+	color: red;
+}
+a img {
+	border: none;
+}
+
+/* Generic frame */
+div.frm {
+	margin-top: 10px;
+
+}
+
+/* Generic header cell */
+div.hcl {
+	height: 18px;
+	background-color: #cc99cc;
+	padding: 2px 4px;
+	overflow: hidden;
+}
+
+/* Generic content cell */
+div.ccl {
+	background-color: #ffe6ff;
+	padding: 4px;
+}
+div.ccl:first-child {
+	border-top: none;
+}
+div.ccl p:first-child {
+	margin-top: 0;
+}
+
+/* Generic button cell */
+div.bcl {
+	border-top: none;
+	padding: 2px 4px 2px 1px;
+	text-align: right;
+}
+
+/* Button link */
+div.bcl a, a.btl {
+	margin: 1px;
+	padding: 0 4px;
+}
+img.btl {
+	vertical-align: bottom;
+}
+div.bcl a:hover, a.btl:hover {
+	margin: 0;
+	border: 1px solid silver;
+	background-color: #fafafa;
+}
+div.bcl a:before, a.btl:before {
+	content: "[";
+}
+div.bcl a:after, a.btl:after {
+	content: "]";
+}
+
+td.shr a.btl {
+	padding: 0 2px;
+}
+
+/* Nav button, page link float */
+span.nav, span.pln {
+	float: right;
+	text-align: center;
+}
+
+/* Page button link */
+span.pln a {
+	margin: 0;
+	padding: 0;
+}
+span.pln a:hover {
+	margin: 0;
+	border: none;
+	background-color: inherit;
+}
+
+/* Table frame */
+table.tbl {
+	margin-top: 10px;
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+}
+
+/* Table header row */
+table.tbl tr.hrw {
+	background-color: #cc99cc;
+	font-weight: bold;
+}
+
+/* Table header cell */
+table.tbl th {
+	border: none;
+	padding: 2px 4px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+/* Table header column cell */
+table.tbl td.hco {
+	width: 20%;
+	font-weight: bold;
+}
+
+/* Table content row */
+table.tbl tr.crw {
+	background-color: #ffe6ff;
+}	
+
+/* Table content cell */
+table.tbl td {
+	border: none;
+	padding: 2px 4px;
+}
+
+/* Table cell short */
+table.tbl .shr {
+	width: 15%;
+	white-space: nowrap;
+}
+
+/* Table cell icon */
+table.tbl img.ico {
+	margin: 1px 0 0 0;
+}
+
+/* Top bar frame */
+div.tpb {
+	margin-top: 0;
+	text-align: center;
+}
+
+/* Error header cell */
+div.err div.hcl {
+	background-color: #ff8888;
+}
+
+/* Error message paragraph */
+div.err div.ccl p {
+	margin: 5px 0 0 0;
+	color: red;
+}
+div.err div.ccl p:first-child {
+	margin: 0;
+}
+
+/* Form */
+form {
+	margin: 0;
+	padding: 0;
+}
+input, button, textarea, select {
+	font-size: inherit;
+	font-family: inherit;
+}
+textarea {
+	width: 99%;
+}
+
+/* Poll result */
+td.plv, td.plp {
+	padding-left: 15px;
+	text-align: right;
+}
+
+/* Poll result bar */
+img.plb {
+	margin-left: 10px;
+	height: 10px;
+	background-color: red;
+}
+
+/* Post header of new posts */
+div.pst.new div.hcl {
+	background-color: #ff9999;
+
+}
+
+/* Post header of target posts */
+div.pst.tgt div.hcl {
+	background-color: #c4c4ff;
+}
+
+/* Quote */
+blockquote {
+	margin: 0;
+	color: gray;
+}
+blockquote p {
+	margin: 0;
+}
+
+/* Rank image */
+img.rnk {
+	margin: 2px 0;
+	vertical-align: text-top;
+}
+
+/* Avatar image */
+img.ava {
+	width: 50px;
+	height: 50px;
+}
+div.pst img.ava {
+	margin-left: 5px;
+	float: right;
+}
+form.agl img.ava {
+	margin: 2px;
+	vertical-align: middle;
+}
+
+/* Make post cell enclose avatar */
+div.pst div.ccl:after {
+	content: "."; 
+	display: block; 
+	visibility: hidden;
+	height: 0; 
+	clear: both; 
+}
+
+/* Make post cell enclose avatar in IE 5-6 */
+* html div.pst div.ccl {
+	height: 1px;
+}
+
+/* Make post cell enclose avatar in IE 7 */
+div.pst div.ccl {
+	display: inline-block;
+}
+div.pst div.ccl {
+	display: block;
+}
+
+/* Signature */
+div.sig, span.sig {
+	font-size: 85%;
+}
+
+/* Icon */
+img.ico {
+	margin: 2px 0;
+	vertical-align: text-top;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+}
+
+/* Smiley icon */
+img.sml {
+	margin-top: 1px;
+	vertical-align: text-top;
+	width: 14px;
+	height: 14px;
+}
+
+/* Flag */
+img.flg {
+	margin: 2px 0;
+	vertical-align: text-top;
+	width: 18px;
+	height: 12px;
+}
+
+/* Header title */
+span.htt {
+	font-weight: bold;
+}
+
+/* Sticky topic title */
+span.stk {
+	font-weight: bold;
+	color: red;
+}
+
+/* Execution message */
+span.tbm {
+	font-weight: bold;
+	color: green;
+}
+
+/* Highlighted keyword, report/message link */
+em {
+	font-weight: bold;
+	font-style: normal;
+	color: red;
+}
+
+/* Monospace font */
+tt {
+	font-size: 90%;
+}
+
+/* Float right */
+.flr {
+	float: right;
+}
+
+/* Help */
+div.hlp h3 {
+	margin: 10px 0 0 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+div.hlp p {
+	margin: 5px 0 0 0;
+}
+
+/* Forum info copyright, mini banner */
+div.icr, div.bni {
+	margin-top: 10px;
+	text-align: center;
+}
+div.icr {
+	border: 1px solid silver;
+}
+div.bni img {
+	margin: 5px;
+}
+
+/* Board jump form */
+form.bjp {
+	margin-top: 10px;
+	float: right;
+}
+
+/* Copyright, page timer messages */
+p.cpr, p.pct {
+	text-align: center;
+	font-size: 85%;
+	color: silver;
+}
+
+/* Forum config */
+form.cfg h3 {
+	margin: 20px 0 10px 0;
+	border-top: 1px solid silver;
+	padding-top: 10px;
+	font-size: 100%;
+	font-weight: bold;
+}
+form.cfg h3:first-child {
+	margin-top: 0;
+	border-top: none;
+}
+form.cfg h4 {
+	margin: 10px 0 0 10px;
+	font-size: 100%;
+	font-weight: bold;
+}
+form.cfg p {
+	margin: 5px 0 0 20px;
+	width: 90%;
+}
+form.cfg samp {
+	color: green;
+	font-family: verdana, sans-serif;
+	font-weight: normal;
+}
+form.cfg dfn {
+	color: gray;
+	font-style: normal;
+	font-weight: normal;
+}
+form.cfg input.ctx {
+	width: 50%;
+}
+form.cfg textarea {
+	width: 90%;
+}
+
+/* Tag buttons */
+button.tbt {
+	margin: 0 3px 3px 0;
+	width: 40px;
+	border: 1px solid gray;
+	background-color: #efefef;
+}
+button.tbt:hover {
+	background-color: white;
+}
+
+/* Invisible table */
+table.tiv {
+	border-collapse: collapse;
+	border: none;
+}
+table.tiv tr {
+	border: none;
+}
+table.tiv td {
+	border: none;
+	padding: 0 5px 0 0;
+	vertical-align: top;
+}
+table.tiv .shr {
+	width: 15%;
+	white-space: nowrap;
+}
+
+/* Topic tags */
+img.ttg {
+	vertical-align: text-top;
+}
+
+/* Image gallery */
+table.igl td {
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 85%;
+}
+
+/* Attachment thumbnail */
+img.amt {
+	border: 1px solid blue;
+}
+
+TABLE.std {
+	background-color: #cc99cc;
+}

@@ -1,0 +1,227 @@
+body { 
+	/*
+	background: rgb(255,204,255) url(/images/background.png) repeat-x;
+	*/
+	background: rgb(255,204,255);
+	min-width: 980px;
+	max-width: 1250px;
+}
+
+* html body {width: 980px;}
+
+a {color: #40b}
+a:visited {color: #c09}
+
+.main {
+	position: relative;
+	top: -80px;
+}
+
+/*
+.main img {
+	border: 2px solid rgb(222,179,201);
+}
+*/
+
+.main .header {
+	width: 640px;
+	text-align: center;
+}
+
+.sidehead {
+	text-align: center;
+}
+
+.sidebar dt,
+.i3 dt {
+	font-family: monospace;
+	margin-top: .5em;
+}
+
+img, div { behavior: url(../resource/iepngfix.htc) }
+
+/*
+ * Header 
+ */
+
+.imagespace {
+	display: inline;
+	width:294px;
+	height:330px;
+	margin: 0px;
+	position: relative;
+	float: right;
+}
+
+.frame {
+	width:294px;
+	height:330px;
+	background:url(../images/frame.png) no-repeat top;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
+
+.nav {
+	position: relative;
+	top: -95px;
+	left: 225px;
+	height: 80px;
+	width: 450px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+/*	border:1px solid #f00; */
+}
+
+.nav ul {
+	white-space:nowrap;
+	padding: 0;
+	margin: 0;
+	display: block;
+	align: center;
+}
+
+.nav li {
+	margin: 0 .9em;
+	display: inline;
+}
+
+.nav a {
+	color: rgb(124,30,165);
+        font-family: Arial, sans-serif;
+	font-weight: bold;
+        font-size: 1.2em;
+	text-decoration: none;
+}
+
+.nav .n2 {font-style: italic;}
+
+.footer ul {
+	white-space:nowrap;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	align: center;
+}
+
+.footer li {margin: 0 .5em; display: inline;}
+.footer a {
+	color: rgb(124,30,165);
+	text-decoration: none;
+}
+
+.nav a:visited,
+.footer a:visited { color: rgb(124,30,165)}
+
+/* 
+ * Sidebar
+ */
+
+.sidebar {
+	margin: 1em;
+	margin-top: 4em;
+	padding: 0 10px;
+	background: rgb(254,233,248);
+	color: rgb(124,30,165);
+	float: right;
+	width: 230px;
+}
+.cb {
+	margin:0.5em 0;
+	margin-top: 40px;
+	color: rgb(124,30,165);
+	float: right;
+	width: 300px;
+/*	border:1px solid #f00; */
+}
+.bt {
+	height:35px;
+	margin:0 0 0 35px;
+	background:url(../images/sidebar.png) no-repeat 100% 0;
+}
+.bt div {
+	position:relative;
+	left:-35px;
+	width:35px;
+	height:35px;
+	background:url(../images/sidebar.png) no-repeat 0 0;
+	font-size:0;
+	line-height:0;
+}
+.bb {
+	height:35px;
+	margin:0 0 0 35px;
+	background:url(../images/sidebar.png) no-repeat 100% 100%;
+}
+.bb div {
+	position:relative;
+	left:-35px;
+	width:35px;
+	height:35px;
+	background:url(../images/sidebar.png) no-repeat 0 100%;
+	font-size:0;
+	line-height:0;
+}
+.i1 {
+	padding:0 0 0 35px;
+	background:url(../images/sidebar-edge.png) repeat-y 0 0;
+}
+.i2 {
+	padding:0 35px 0 0;
+	background:url(../images/sidebar-edge.png) repeat-y 100% 0;
+}
+.i3 {
+	display: block;
+	margin: 0;
+	padding: 1px;
+	background: rgb(254,233,248);
+}
+.sidebar ul,
+.i3 ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar li,
+.i3 li {
+	padding: .4em 0;
+}
+
+.sidebar a,
+.i3 a {
+	color: rgb(124,30,165);
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+}
+
+.i3:after {
+	content:"."; 
+	display:block; 
+	height:1px;
+	clear:both;
+	visibility:hidden;
+}
+
+.i3 {display:inline-block;}
+.i3 {display:block;}
+
+.sidebar div#rseries,
+.i3 div#rseries {float:right}
+
+.fanficseries {width:530px}
+
+* html .i1,
+* html .i3 {height:1px;}
+* html .sidebar {width:230px; position:relative; top:0;}
+* html .cb {width:300px; position:relative; top:0;}
+* html .fanficseries {width:500px}
+
+
+* html .i1,
+* html .i2 {background-image:url(../images/sidebar-edge.gif);}
+* html .bt,
+* html .bt div,
+* html .bb,
+* html .bb div {background-image:url(../images/sidebar.gif);}
+
